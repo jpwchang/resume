@@ -73,7 +73,7 @@
 
 \newcommand{\header}[3]{%
   \begin{tikzpicture}[remember picture,overlay]
-    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=4cm] (box) at (current page.north){};
+    \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=3.5cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
       \fontsize{40pt}{72pt}\color{header}%
       {\thinfont #1}{\bodyfont  #2}
@@ -114,7 +114,7 @@
   \par\vspace{\parskip}
   {%
     \LARGE\headingfont\color{headercolor}%
-    \@sectioncolor #1%
+    \uppercase{#1}%
   }
   \par\vspace{\parskip}
 }
@@ -169,7 +169,7 @@
   \renewcommand{\subsection}[1]{
     \par\vspace{\baselineskip}{\large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{5}(1.5, 3.35)
+  \begin{textblock}{5}(1.5, 3.3)
   \begin{flushright}
   \obeycr
 }{%
@@ -322,12 +322,12 @@
 \RequirePackage[left=7.1cm,top=2cm,right=1.5cm,bottom=0.5cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
 \hypersetup{
-    colorlinks=false,       
-    linkcolor=red,          
-    citecolor=red,        
-    filecolor=red,      
+    colorlinks=false,
+    linkcolor=red,
+    citecolor=red,
+    filecolor=red,
     urlcolor = red}
-    
+
 % A fix for \href{}{} colors not working with fontspec
 \makeatletter
 \def\HyColor@@@@UseColor#1\@nil{\addfontfeatures{Color=#1}}
