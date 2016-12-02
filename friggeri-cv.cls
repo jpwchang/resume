@@ -150,7 +150,7 @@
     \textbf{#2}%
     \hfill%
     {\bodyfont\addfontfeature{Color=lightgray} #3}\\%
-    #4\vspace{0.25\parsep}%
+    #4\vspace{\parsep}%
   }\\}
 
 
