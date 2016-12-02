@@ -111,24 +111,24 @@
 }
 
 \renewcommand{\section}[1]{
-  \par\vspace{\parskip}
+  \par\vspace{.5\parskip}
   {%
     \LARGE\headingfont\color{headercolor}%
     \uppercase{#1}%
   }
-  \par\vspace{\parskip}
+  \par\vspace{.25\parskip}
 }
 
 \renewcommand{\subsection}[1]{
-  \par\vspace{.5\parskip}%
+  \par\vspace{.1\parskip}%
   {\Large\headingfont\color{headercolor} #1}
-  \par\vspace{.25\parskip}%
+  \par\vspace{.05\parskip}%
 }
 
 \renewcommand{\subsubsection}[2]{
-  \par\vspace{.5\parskip}%
+  \par\vspace{.1\parskip}%
   {\Large\headingfont\color{headercolor} #2}
-  \par\vspace{.25\parskip}%
+  \par\vspace{.05\parskip}%
 }
 
 \pagestyle{empty}
@@ -150,7 +150,7 @@
     \textbf{#2}%
     \hfill%
     {\bodyfont\addfontfeature{Color=lightgray} #3}\\%
-    #4\vspace{\parsep}%
+    #4\vspace{0.25\parsep}%
   }\\}
 
 
@@ -169,7 +169,7 @@
   \renewcommand{\subsection}[1]{
     \par\vspace{\baselineskip}{\large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{5}(1.5, 3.3)
+  \begin{textblock}{5}(1.5, 3.2)
   \begin{flushright}
   \obeycr
 }{%
