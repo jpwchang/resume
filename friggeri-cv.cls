@@ -48,11 +48,11 @@
 %%%%%%%%%
 
 \RequirePackage[quiet]{fontspec}
-\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+\RequirePackage{unicode-math}
 
 \newfontfamily\bodyfont[]{Source Sans Pro}
 \newfontfamily\thinfont[]{Source Sans Pro Light}
-\newfontfamily\headingfont[]{Source Sans Pro Semibold}
+\newfontfamily\headingfont[]{Source Sans Pro SemiBold}
 
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[Mapping=tex-text, Color=textcolor]{Source Sans Pro Light}
@@ -150,7 +150,7 @@
     \textbf{#2}%
     \hfill%
     {\bodyfont\addfontfeature{Color=lightgray} #3}\\%
-    #4\vspace{0.25\parsep}%
+    #4\vspace{\parsep}%
   }\\}
 
 
