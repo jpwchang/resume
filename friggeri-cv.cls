@@ -83,7 +83,7 @@
       \thinfont #3%
     };
   \end{tikzpicture}
-  \vspace{1.5cm}
+  \vspace{1.75cm}
   \vspace{-2\parskip}
 }
 
@@ -169,7 +169,7 @@
   \renewcommand{\subsection}[1]{
     \par\vspace{\baselineskip}{\large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{5}(1.5, 3.2)
+  \begin{textblock}{5}(1.5, 3.5)
   \begin{flushright}
   \obeycr
 }{%
